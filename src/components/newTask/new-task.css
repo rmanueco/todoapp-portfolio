@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+#new-task-container {
+    display: grid;
+    grid-template-rows:1fr 2fr 1fr; 
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    background-color: black;
+    animation: container-animation 1.5s;
+}
+
+#new-task {
+    grid-row: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: black;
+    min-width: 100%;
+    color: white;
+    font-family: Montserrat, sans-serif;
+    border-right: 0px solid yellow;
+    gap: 1rem;
+
+    animation: border-animation 2s 1.5s;
+    animation-fill-mode: forwards;  
+}
+
+    #new-task h1 {
+        font-size: 2.5rem;
+    }
+    #new-task div i {
+        font-size: 1.5rem;
+        color: yellow;
+    }
+    #new-task input {
+        padding: 0.5rem 1rem;
+        font-family: Montserrat, sans-serif;
+    }
+    #new-task textarea {
+        padding: 0.5rem 1rem;
+        font-family: Montserrat, sans-serif;
+        resize: none;
+    
+    }
+    #new-task button {
+        border-radius: 50px;
+        padding: 1rem 2rem;
+        font-family: Montserrat, sans-serif;
+        font-weight: bold;
+        font-size: 1rem;
+        background-color: yellow;
+        border: none;
+        cursor: pointer;
+    }
+    #new-task button:hover {
+        background-color: rgb(253, 253, 78);
+        
+    }
+        #new-task button i {
+            margin-right: 0.5rem;
+        }
+    #new-task p {
+        color: red;
+        font-size: 0.7rem;
+        padding-top:0;
+    }
+
+@media only screen and (max-width: 800px) {
+    #new-task-container {
+    
+        grid-template-rows:1fr 2fr; 
+     
+    }
+    #new-task {
+        border-right: 0;
+    }
+
+
+}
+
+
+@keyframes border-animation {
+    0% {
+        border-right:3px solid rgb(255,255,0, 0);
+    }
+    100% {
+        border-right:3px solid rgb(255,255,0, 1);
+    }
+}
+@keyframes container-animation {
+    0%{
+        margin-left: -1000px;
+    }
+}

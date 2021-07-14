@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-color: black;
+    color: white;
+    padding: 1rem;
+}
+
+    #header div {
+        width: 100%;
+    }
+
+    #header #logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family:Righteous, sans-serif ;
+        font-size: 2rem;
+    }
+        #logo span {
+            font-size: 2.5rem;
+            color: yellow;
+        }
+    #header #app-name {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        font-family: Montserrat, sans-serif; 
+        font-size: 2rem;
+    }
+        #header #app-name span {
+            font-size: 2rem;
+            font-weight: 500;
+            color: yellow;
+            animation: do-entering 1s;
+        }
+
+
+   
+
+
+@keyframes do-entering {
+    0% {
+        margin-top: -100px;
+    }
+}

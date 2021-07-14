@@ -1,0 +1,41 @@
+#task-item {
+    border-bottom: 1.5px solid yellow;
+    padding: 0.5rem;
+    padding-top:0 ;
+    cursor: pointer;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 4px;
+    font-weight: bold;
+
+}
+
+#task-item:hover {
+    background-color: rgb(22, 22, 22);
+    
+}
+
+#description {
+    padding: 0.5rem;
+    font-size: 0.8rem;
+    max-width: 400px;
+    max-height: max-content;
+}
+
+#task-item i:hover {
+    color: yellow;
+}
+
+
+
+@media only screen and (max-width: 800px) {
+    #task-item {
+
+        width: 100%;
+       
+    
+    }
+
+}
