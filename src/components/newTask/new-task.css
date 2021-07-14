@@ -22,7 +22,7 @@
     color: white;
     font-family: Montserrat, sans-serif;
     border-right: 0px solid yellow;
-    gap: 1rem;
+
 
     animation: border-animation 2s 1.5s;
     animation-fill-mode: forwards;  
@@ -38,22 +38,25 @@
     #new-task input {
         padding: 0.5rem 1rem;
         font-family: Montserrat, sans-serif;
+        margin-top: 0.5rem;
     }
     #new-task textarea {
         padding: 0.5rem 1rem;
         font-family: Montserrat, sans-serif;
         resize: none;
+        margin-top: 0.5rem;
     
     }
     #new-task button {
         border-radius: 50px;
-        padding: 1rem 2rem;
+        padding: 0.7rem 1.4rem;
         font-family: Montserrat, sans-serif;
         font-weight: bold;
-        font-size: 1rem;
+        font-size: 0.8rem;
         background-color: yellow;
         border: none;
         cursor: pointer;
+        margin-top: 0.5rem;
     }
     #new-task button:hover {
         background-color: rgb(253, 253, 78);
@@ -65,7 +68,7 @@
     #new-task p {
         color: red;
         font-size: 0.7rem;
-        padding-top:0;
+        margin-top: 0.2rem;
     }
 
 @media only screen and (max-width: 800px) {
